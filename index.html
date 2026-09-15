@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bhavesh Manoj Shewale · Computer Engineering Student</title>
+<meta name="description" content="Portfolio of Bhavesh Manoj Shewale, a Computer Engineering student exploring Android development, IoT and agriculture technology." />
+
+<!-- Fonts: Sora for display/headings, Inter for body text -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== Background circuit canvas (animated tech backdrop) ===== -->
+<canvas id="circuit-bg"></canvas>
+
+<!-- ===== Navigation ===== -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">BM<span>S</span></a>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#interests" class="nav-link">Interests</a>
+      <a href="#vision" class="nav-link">Vision</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <nav class="mobile-menu" id="mobile-menu">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#education" class="mobile-link">Education</a>
+    <a href="#interests" class="mobile-link">Interests</a>
+    <a href="#vision" class="mobile-link">Vision</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===== 1. HOME / HERO ===== -->
+  <section id="home" class="section hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Computer Engineering · Maharashtra, India</p>
+        <h1 class="hero-title">
+          Hi, I'm Bhavesh <span class="wave">👋</span>
+        </h1>
+        <h2 class="hero-subtitle">Computer Engineering Student &amp; Future Tech Developer</h2>
+        <p class="hero-desc">
+          I build my skills at the intersection of software, Android apps and connected
+          hardware — learning something new about code and circuits every day.
+        </p>
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary">Explore About Me</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit-ring ring-1"></div>
+        <div class="orbit-ring ring-2"></div>
+        <div class="orbit-ring ring-3"></div>
+        <div class="core-node">
+          <span class="core-dot"></span>
+        </div>
+        <div class="floating-chip chip-1">&lt;/&gt;</div>
+        <div class="floating-chip chip-2">IoT</div>
+        <div class="floating-chip chip-3">Kotlin</div>
+        <div class="floating-chip chip-4">ESP32</div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== 2. ABOUT ME ===== -->
+  <section id="about" class="section about">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-tag">01 — Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            I'm Bhavesh Manoj Shewale, a Computer Engineering student from Maharashtra,
+            India, currently studying at Gangamai Engineering College. I'm genuinely
+            curious about how technology works — from the logic behind a few lines of
+            code to the hardware that senses and responds to the world around it.
+          </p>
+          <p>
+            My interests sit across coding, Android development, and the Internet of
+            Things, and I enjoy exploring how these areas can come together to solve
+            practical, real-world problems — including in agriculture, a field close to
+            home in Maharashtra. I'm still early in my journey, learning steadily and
+            building a strong foundation one concept at a time.
+          </p>
+          <p>
+            I approach every new tool, language or framework with patience and
+            curiosity, and I'm focused on growing into a capable, well-rounded
+            technology professional.
+          </p>
+        </div>
+
+        <div class="about-facts">
+          <div class="fact-card">
+            <span class="fact-label">Name</span>
+            <span class="fact-value">Bhavesh Manoj Shewale</span>
+          </div>
+          <div class="fact-card">
+            <span class="fact-label">Branch</span>
+            <span class="fact-value">Computer Engineering</span>
+          </div>
+          <div class="fact-card">
+            <span class="fact-label">College</span>
+            <span class="fact-value">Gangamai Engineering College</span>
+          </div>
+          <div class="fact-card">
+            <span class="fact-label">Location</span>
+            <span class="fact-value">Maharashtra, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. SKILLS ===== -->
+  <section id="skills" class="section skills">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-tag">02 — Currently Building</span>
+        <h2 class="section-title">Skills I'm Learning</h2>
+        <p class="section-subtitle">
+          These are the languages and tools I'm actively practicing and improving
+          through coursework and self-study.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card"><span class="skill-icon">C</span><span class="skill-name">C</span></div>
+        <div class="skill-card"><span class="skill-icon">C++</span><span class="skill-name">C++</span></div>
+        <div class="skill-card"><span class="skill-icon">Kt</span><span class="skill-name">Kotlin</span></div>
+        <div class="skill-card"><span class="skill-icon">AS</span><span class="skill-name">Android Studio</span></div>
+        <div class="skill-card"><span class="skill-icon">{ }</span><span class="skill-name">VS Code</span></div>
+        <div class="skill-card"><span class="skill-icon">&lt;/&gt;</span><span class="skill-name">HTML</span></div>
+        <div class="skill-card"><span class="skill-icon">#</span><span class="skill-name">CSS</span></div>
+        <div class="skill-card"><span class="skill-icon">JS</span><span class="skill-name">JavaScript</span></div>
+        <div class="skill-card"><span class="skill-icon">32</span><span class="skill-name">ESP32</span></div>
+        <div class="skill-card"><span class="skill-icon">BT</span><span class="skill-name">Bluetooth</span></div>
+        <div class="skill-card"><span class="skill-icon">IoT</span><span class="skill-name">Basic IoT</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. EDUCATION ===== -->
+  <section id="education" class="section education">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-tag">03 — Academic Path</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <h3>Computer Engineering</h3>
+            <p class="timeline-org">Gangamai Engineering College</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <h3>12th Standard</h3>
+            <p class="timeline-org">N. G. Bagul Jr. College</p>
+            <p class="timeline-meta">Percentage: <strong>73%</strong></p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <h3>CET</h3>
+            <p class="timeline-meta">Percentile: <strong>64%</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. INTERESTS ===== -->
+  <section id="interests" class="section interests">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-tag">04 — Beyond the Syllabus</span>
+        <h2 class="section-title">Interests</h2>
+      </div>
+
+      <div class="interests-grid">
+        <div class="interest-tile">
+          <span class="interest-icon">💻</span>
+          <h3>Coding</h3>
+        </div>
+        <div class="interest-tile">
+          <span class="interest-icon">⚙️</span>
+          <h3>Technology</h3>
+        </div>
+        <div class="interest-tile">
+          <span class="interest-icon">📱</span>
+          <h3>Android Development</h3>
+        </div>
+        <div class="interest-tile">
+          <span class="interest-icon">🔗</span>
+          <h3>IoT</h3>
+        </div>
+        <div class="interest-tile">
+          <span class="interest-icon">🌾</span>
+          <h3>Agriculture Technology</h3>
+        </div>
+        <div class="interest-tile">
+          <span class="interest-icon">📷</span>
+          <h3>Photography</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. MY VISION ===== -->
+  <section id="vision" class="section vision">
+    <div class="section-inner vision-inner">
+      <span class="section-tag">05 — Looking Ahead</span>
+      <p class="vision-statement">
+        My goal is to grow into a <em>skilled technology and software professional</em> —
+        one who can turn code and connected devices into solutions that genuinely help
+        people, including in fields like agriculture that shape everyday life in
+        Maharashtra.
+      </p>
+      <p class="vision-sub">
+        I want to keep learning deliberately, build real understanding rather than
+        surface-level knowledge, and eventually create useful technology-based
+        solutions for real-world problems.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== 7. CONTACT ===== -->
+  <section id="contact" class="section contact">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-tag">06 — Get In Touch</span>
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">
+          Have something to discuss, or just want to say hello? Send me a message.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-side">
+          <p class="contact-side-heading">Find me online</p>
+          <div class="social-links">
+            <a href="#" class="social-link" data-social="instagram">
+              <span class="social-icon">IG</span>
+              <span>Instagram <small>(add link)</small></span>
+            </a>
+            <a href="#" class="social-link" data-social="github">
+              <span class="social-icon">GH</span>
+              <span>GitHub <small>(add link)</small></span>
+            </a>
+            <a href="#" class="social-link" data-social="linkedin">
+              <span class="social-icon">in</span>
+              <span>LinkedIn <small>(add link)</small></span>
+            </a>
+          </div>
+          <p class="contact-note">
+            Update the <code>href</code> values in <code>index.html</code> with your
+            real profile links whenever you're ready.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Bhavesh Manoj Shewale. Built with curiosity and code.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
